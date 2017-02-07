@@ -6,7 +6,7 @@ class News_model extends CI_Model {
         public function __construct(){
 		
         $this->load->database();
-		$url="http://192.168.114.10/serviceNews.php";
+		$url="http://localhost/serviceNews.php";
 		$respuesta=file_get_contents($url);
 		$this->obj=json_decode($respuesta, true);
         }
